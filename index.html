@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast</h1>
+            <div class="controls">
+                <button id="dark-mode-toggle" class="icon-button">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="unit-toggle" class="icon-button">°C</button>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="city-input">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <div class="location">
+                <h2 id="city">City Name</h2>
+                <p id="date">Date</p>
+            </div>
+            <div class="weather-details">
+                <div class="temp">
+                    <span id="temperature">--</span><span id="temp-unit">°C</span>
+                </div>
+                <div class="weather">
+                    <img src="" alt="weather icon" id="weather-icon" class="weather-icon">
+                    <p id="description">Weather Description</p>
+                </div>
+                <div class="details">
+                    <div class="col">
+                        <img src="https://cdn-icons-png.flaticon.com/512/219/219816.png" alt="humidity" class="detail-icon">
+                        <div>
+                            <p id="humidity">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn-icons-png.flaticon.com/512/172/172922.png" alt="wind" class="detail-icon">
+                        <div>
+                            <p id="wind-speed">-- km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forecast" id="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast cards will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
