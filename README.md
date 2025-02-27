@@ -150,4 +150,4 @@ function setWeatherBackground(weatherMain) {
 - Responsive design for mobile devices
 - Supports touch interactions
 
-This documentation provides a comprehensive overview of how your weather app works. Let me know if you need any clarification on specific parts! 
+This documentation provides a comprehensive overview of how the weather app works.
